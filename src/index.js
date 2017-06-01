@@ -2,66 +2,146 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-class Square extends React.Component {
+class Summary extends React.Component {
   render() {
-    return (
-      <button className="square">
-        {/* TODO */}
-      </button>
-    );
-  }
+    return(
+      <div id="summary">
+        <p>
+          This is my summary!
+        </p>
+      </div>
+    )
+  };
 }
 
-class Board extends React.Component {
-  renderSquare(i) {
-    return <Square />;
-  }
-
+class Educations extends React.Component {
   render() {
-    const status = 'Next player: X';
-
     return (
-      <div>
-        <div className="status">{status}</div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-        </div>
+      <div id="educations">
+        <p>
+          This is educations!
+        </p>
+      </div>
+    )
+  };
+}
+
+class Experiences extends React.Component {
+  render() {
+    return (
+      <div id="experiences">
+        <p>
+          This is experiences!
+        </p>
+      </div>
+    )
+  };
+}
+
+class Projects extends React.Component {
+  render() {
+    return (
+      <div id="projects">
+        <p>
+          This is projects!
+        </p>
+      </div>
+    )
+  };
+}
+
+class Contact extends React.Component {
+  render() {
+    return (
+      <div id="contact">
+        <p>
+          This is contact!
+        </p>
+      </div>
+    )
+  };
+}
+
+class Header extends React.Component {
+  render() {
+    return (
+      <div id="header">
+        <p>
+          This is header!
+        </p>
+      </div>
+    )
+  };
+}
+
+class Activities extends React.Component {
+  render() {
+    return (
+      <div id="activities">
+        <p>
+          This is activities!
+        </p>
+      </div>
+    )
+  };
+}
+
+class Volunteers extends React.Component {
+  render() {
+    return (
+      <div id="volunteers">
+        <p>
+          This is volunteers!
+        </p>
+      </div>
+    )
+  };
+}
+
+class Skills extends React.Component {
+  render() {
+    return (
+      <div id="skills">
+        <p>
+          This is skills!
+        </p>
+      </div>
+    )
+  };
+}
+
+class Education extends React.Component {
+  render() {
+    return (
+      <div id="education">
+        <p>
+          This is education!
+        </p>
+      </div>
+    )
+  };
+}
+
+class Resume extends React.Component {
+  render() {
+    return (
+      <div class="profile">
+        <Header />
+        <Contact />
+        <Summary />
+        <Education />
+        <Skills />
+        <Experiences />
+        <Projects />
+        <Volunteers />
+        <Activities />
       </div>
     );
   }
 }
-
-class Game extends React.Component {
-  render() {
-    return (
-      <div className="game">
-        <div className="game-board">
-          <Board />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
-      </div>
-    );
-  }
-}
-
-// ========================================
 
 ReactDOM.render(
-  <Game />,
+  <Resume />,
   document.getElementById('root')
 );
+
