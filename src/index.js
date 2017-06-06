@@ -20,6 +20,32 @@ class Educations extends React.Component {
       <div id="educations">
         <p>
           This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
+          This is educations!
         </p>
       </div>
     )
@@ -122,19 +148,31 @@ class Education extends React.Component {
   };
 }
 
+class Navigation extends React.Component {
+  render() {
+    return (
+        <Header />
+    )
+  };
+}
+
 class Resume extends React.Component {
   render() {
     return (
-      <div class="profile">
-        <Header />
-        <Contact />
-        <Summary />
-        <Education />
-        <Skills />
-        <Experiences />
-        <Projects />
-        <Volunteers />
-        <Activities />
+      <div className="profile">
+        <div className="rightsidebar">
+          <Header />
+        </div>
+        <div className="leftsidebar">
+          <Contact />
+          <Summary />
+          <Educations />
+          <Skills />
+          <Experiences />
+          <Projects />
+          <Volunteers />
+          <Activities />
+        </div>
       </div>
     );
   }
