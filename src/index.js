@@ -55,8 +55,7 @@ class Experiences extends React.Component {
               Dev Bootcamp
             </h4>
             <p>
-              Collaborate with teammates to make a web pairing application to help over 100 DBC students during their study period.
-The students can log in with their GitHub accounts and receive an email notification when they paired up. The product is built from scratch with Ruby on Rails and deployed on Heroku
+              Collaborate with teammates to make a web pairing application to help over 100 DBC students during their study period...
             </p><br/>
 
             <h3>
@@ -66,12 +65,7 @@ The students can log in with their GitHub accounts and receive an email notifica
               JAPK Engineering & Consulting Inc.
             </h4>
             <p>
-              Assist Senior Drafter to develop automated electrical package template to reduce drafting process from 1-2 hours down to under 1 mins.
-Assist Senior Engineers in the review of 50 P&IDs and updating hundreds relevant drawings and schematics to finalize projects.
-Prepare I/O list, Fire & Gas detection, project tracking list, SD key, voltage drop calculation, total load
-calculation and other technical documents for the senior project manager.
-Run the panel review from the panel shop before the panels are sent to the site.
-Power distribution design for oil and gas industry under 600V including single phase wiring diagrams, motor control centers, and lighting panels.
+              Assist Senior Drafter to develop automated electrical package template to reduce drafting process from 1-2 hours down to under 1 mins...
             </p><br/>
           </div>
         </div>
@@ -90,11 +84,9 @@ class Projects extends React.Component {
               PairBooked
             </h3>
             <p>
-              Created an online pairing tool for over 100 DBC students to utilize their study schedule during phase 0.
-              The app is made from Ruby of Rails and deloyed on Heroku. The students could log in with their GitHub accounts
-              and receive an email notification when they paired up. Created experiences that come to life on digital devices,
-              such as laptops, tablets and smartphones.
+              Created an online pairing tool for over 100 DBC students to utilize their study schedule ...
             </p><br/>
+
             <h3>
               SocialSphere
             </h3>
@@ -185,24 +177,22 @@ class Skills extends React.Component {
       <div className="block">
         <div className="container">
           <div id="skills" className="section">
-            <p>
-              This is skills!
-            </p>
             <table>
               <tr>
-                <th>Ruby on Rails</th>
-                <th>HTML</th>
-                <th>CSS</th>
+                <th><img src={require('./images/java.jpg')} /></th>
+                <th><img src={require('./images/rails_on_ruby.jpg')} /></th>
+                <th><img src={require('./images/html-xxl.png')} /></th>
+                <th><img src={require('./images/css-xxl.png')} /></th>
               </tr>
               <tr>
-                <th>Javascript</th>
-                <th>JQuery</th>
-                <th>SQL</th>
+                <th><img src={require('./images/javascript.png')} /></th>
+                <th><img src={require('./images/jquery.png')} /></th>
+                <th><img src={require('./images/sql.png')} /></th>
               </tr>
               <tr>
-                <th>Algorithm</th>
-                <th>TDD</th>
-                <th>Agile Development</th>
+                <th><img src={require('./images/algorithm-512.png')} /></th>
+                <th><img src={require('./images/TDD-icon.png')} /></th>
+                <th><img src={require('./images/agile.png')} /></th>
               </tr>
             </table>
           </div>

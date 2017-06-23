@@ -67,6 +67,30 @@
 .section p {
 	color: #696969;
 }
+.section table {
+	margin: auto;
+}
+
+.section table img {
+	/*border: 2px solid red;*/
+	/*margin-top: 10px;	
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;*/
+	/*position: relative;*/
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+	width: 97%;
+	height: 97%;
+}
+
+.section th {
+	border-radius: 50%; 
+	width: 100px;
+	height: 100px;
+	box-shadow: 1px 1px 2px 1px #888888;
+}
 
 .block {
 	margin-bottom: 30px;
