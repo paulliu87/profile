@@ -5,10 +5,15 @@ import './index.css';
 class Summary extends React.Component {
   render() {
     return(
-      <div id="summary">
-        <p>
-          As an electrical engineer with developer skills, I have a passion for new technology. I love to find my own limit and push it further. I crave for new knowledge and skills. More importantly, I have many ideas and I want to use my skills to make them come true.
-        </p>
+      <div className="block">
+        <div className="container">
+          <div id="summary" className="section">
+            <h2>Summary</h2>
+            <p>
+              Software development engineer and a former electrical engineer with hands-on experience in system design, agile development and test driven development. A life-long learner and an ethuistiasitc team player dedicates to efficiently resolving project issues. Eager to contribute to an agile team rooted in solving real world problems by taking ownership of core components.
+            </p>
+          </div>
+        </div>
       </div>
     )
   };
@@ -20,6 +25,7 @@ class Educations extends React.Component {
       <div className="block">
         <div className="container">
           <div id="educations" className="section">
+            <h2>Education</h2>
             <h3>
               Electrical Engineer
             </h3>
@@ -35,6 +41,14 @@ class Educations extends React.Component {
               Dev Bootcamp
             </h4>
             <br/>
+
+            <h3>
+              Algorithm, System Design
+            </h3>
+            <h4>
+              NineChapters
+            </h4>
+            <br/>
           </div>
         </div>
       </div>
@@ -48,6 +62,7 @@ class Experiences extends React.Component {
       <div className="block">
         <div className="container">
           <div id="experiences" className="section">
+            <h2>Experience</h2>
             <h3>
               Web Developer Student
             </h3>
@@ -80,6 +95,7 @@ class Projects extends React.Component {
       <div className="block">
         <div className="container">
           <div id="projects" className="section">
+            <h2>Projects</h2>
             <h3>
               PairBooked
             </h3>
@@ -125,6 +141,11 @@ class Header extends React.Component {
   render() {
     return (
       <div id="header">
+        <div className="avator-container">
+          <div className="avator">
+            <img src={require('./images/avator.png')} alt="avator" />
+          </div>
+        </div>
         <h1>
           Paul Liu
         </h1>
@@ -145,6 +166,7 @@ class Activities extends React.Component {
       <div className="block">
         <div className="container">
           <div id="activities" className="section">
+            <h2>Activities</h2>
             <p>
               This is activities!
             </p>
@@ -161,6 +183,7 @@ class Volunteers extends React.Component {
       <div className="block">
         <div className="container">
           <div id="volunteers" className="section">
+            <h2>Volunteers</h2>
             <p>
               This is volunteers!
             </p>
@@ -177,6 +200,7 @@ class Skills extends React.Component {
       <div className="block">
         <div className="container">
           <div id="skills" className="section">
+            <h2>Skills</h2>
             <table>
               <tr>
                 <th><img src={require('./images/java.jpg')} /></th>
@@ -202,6 +226,16 @@ class Skills extends React.Component {
   };
 }
 
+// function Avator(props) {
+//   return (
+//     <div className="avator-container">
+//       <div className="avator">
+//         <img src={props.address)} />
+//       </div>
+//     </div>
+//   );
+// }
+
 class Navigation extends React.Component {
   render() {
     return (
@@ -217,10 +251,10 @@ class Resume extends React.Component {
       <div className="profile">
         <div className="rightsidebar">
           <Header />
-          <Summary />
           <Contact />
         </div>
         <div className="leftsidebar">
+          <Summary />
           <Educations />
           <Skills />
           <Experiences />
